@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+:root{
+    --green: #465a3d;
+    --orange: #C7923E;
+    --white: #FFFFFF;
+    --black: #000000;
+    --red: #C73131;
+    --smooth: #a6ab8a;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f5f5f5;
+}
+
+   /* header is here */
+
+header{
+    width: 100%;
+    height: 10%;
+    background-color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 2%;
+}
+header .contact{
+    display: flex;
+    gap: 1.3rem;
+    margin-left: 2%;
+}
+header .contact div i,a{
+    color: var(--white);
+    text-decoration: none;
+}
+header .contact div a:hover{
+    color:var(--orange);
+}
+header .social{
+    display: flex;
+    gap: 10px;
+    color: var(--white);
+    font-size: 1.5rem;
+    margin: 0.5rem 0rem;
+    margin-right: 6%;
+}
+header .social i{
+    cursor: pointer;
+}
+header .social i:hover{
+    color: var(--orange)
+}
+
+    /* main nav bar is here */
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .nav{
+    width: 60%;
+    height: 6em;
+    
+}
+main .nav div{
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 3rem;
+}
+.nav nav{
+    display: flex;
+    gap: 1.3rem;
+}
+.nav nav ul{
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav nav #home{
+    color: var(--green);
+    font-weight: 600;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav button{
+    width: 15%;
+    height: 1.8rem;
+    margin-top: 1rem;
+    background-color: var(--orange);
+    border: 1.5px solid var(--green);
+    border-radius: 10px;
+    color: var(--green);
+    font-size: 1rem;
+}
+.home-img{
+    width: 100%;
+    height: 85vh;
+    background-image: url("/public/img/home-svg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ /* package is here */
+
+
+main .pack-card{
+    width: 60%;
+}
+main .package{
+    width: auto;
+    height: auto;
+    margin: 3rem 0;
+}
+main .p1{
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: var(--orange);
+    font-size: 2rem;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    text-align: center;
+    margin-top: 3rem;
+}
+main .p2{
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: var(--black);
+    font-size: 3rem;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    text-align: center;
+    margin-top: 1.3rem;
+}
+main .pack-card .cards{
+    width: 100%;
+    max-height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.clickable-card {
+    display: block;
+    max-width: 80%;
+    max-height: 100%;
+    margin-inline: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: none;
+    background: #fff;
+    transform-origin: center center;
+    transition: all 0.4s ease-in-out;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .clickable-card h2,
+  .clickable-card .read-more {
+    transition: color 0.4s ease-in-out;
+  }
+  
+  .clickable-card img {
+    transform-origin: center;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .clickable-card:hover .read-more,
+  .clickable-card:focus .read-more,
+  .clickable-card:hover h2,
+  .clickable-card:focus h2 {
+    color: #28666e;
+  }
+  
+  .clickable-card:hover img,
+  .clickable-card:focus img {
+    transform: scale(1.1);
+  }
+  
+  .article-body {
+    padding: 1.5em;
+  }
+  
+  .clickable-card h2 {
+    margin: 0 0 1.2em 0;
+    font-size: 1.9rem;
+    transition: color 0.3s ease-out;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+
+        /*  slider card is here */
+
+        
+        
+/* Why with travel is here */
+
+main .why-with{
+    width: 60%;
+    height: 40%;
+}
+main .why-cards{
+    width: 100%;
+    height: 14rem;
+    display: flex;
+    justify-content: space-around;
+}
+main .why-cards .why-card{
+    width: 23%;
+    height: 100%;
+    background-color: var(--green);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+main .why-cards .why-card i{
+    font-size: 2.5rem;
+    color: var(--white)
+
+}
+main .why-cards .why-card p{
+    font-size: 1.2rem;
+    color: var(--white);
+    text-align: center;
+}
+
+ /* recommended tours is here */
+
+main .recommended{
+    width: 60%;
+    height: auto;
+}
+.red-p{
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: var(--red);
+    font-size: 3rem;
+    line-height: 120%;
+    letter-spacing: 0.005em;
+    text-align: center;
+    margin-top: 12%;
+}
+main .recommended .recommended-cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+main .recommended .recommended-cards .rec-card{
+    width: 30%;
+    height: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0 0 3% 0;
+    
+}
+main .recommended .recommended-cards .rec-card button{
+  float: right;
+  margin-right: 1.9rem;
+}
+main .recommended-cards .card-names{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.7rem 1.9rem;
+}
+main .recommended-cards .card-names .nat{
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+}
+main .recommended-cards .card-names .fr{
+  font-size: 1rem;
+  color: #C0C0C0;
+  font-weight: 700;
+  text-align: center;
+}
+main .recommended-cards .card-names .p-pric{
+  font-size: 1.1em;
+  color: red;
+  line-height: 19.2px;
+  text-align: center;
+  font-weight: 700;
+}
+main .recommended-cards .list{
+  margin: 10% 0 10% 10%;
+  font-weight: 400;
+}
+main .recommended-cards button{
+  width: 29%;
+  height: 7%;
+  border: none;
+  color: var(--white);
+  background-color: var(--orange);
+  border-radius: 10px;
+}
+
+  /* out clients section is here */
+
+main .our-client{
+  width: 60%;
+}
+.our-client .red-p{
+  margin-top: 150px;
+}
+main .our-client .client-logos{
+  width: 100%;
+  height: 50vh;
+}
+
+
+
+/* Our contents section is here */
+
+main .our-contents{
+  width: 60%;
+  height: 50vh;
+}
+main .our-contents .embed-container{
+  margin-top: 2rem;
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* our comments section is here */
+
+main .our-comments{
+  margin-top: 8rem;
+  width: 60%;
+  height: 80vh
+}
+main .comment-container{
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+main .comment-container .comment{
+  width: 28%;
+  height: 350px;
+  border: 1px solid silver;
+  box-shadow: 0px 2px 4px silver;
+  border-radius: 10px;
+}
+
+/* footer is here */
+
+footer{
+  width: 100vw;
+  height: 50vh;
+  background-color: var(--green);
+}
