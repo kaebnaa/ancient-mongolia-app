@@ -36,9 +36,9 @@
             <div>
                 <img src="/public/img/logo.jpg" alt="" class="logo" width="80px" height="80px">
                 <nav>
-                    <ul id="home">Home</ul>
+                    <ul id="home" class="active">Home</ul>
                     <ul id="about">About</ul>
-                    <ul id="tour">Tour package</ul>
+                    <ul id="tour-package">Tour package</ul>
                     <ul id="gallery">Gallery</ul>
                     <ul id="contact">Contact us</ul>
                 </nav>
@@ -415,20 +415,28 @@
           <h1>If you have any question,<br>Let us help you !</h1>
           <p>If you have any questions or would like to <br>book a tour with us, please don't hesitate to contact us.</p>
 
-          <p>Phone: <a href="tel:+9768888-8888">(976) 8888-8888</a></p>
-          <p>Email: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
-          <p>Address: Mongolia, Ulaanbaatar</p>
-
-          <h2>Subscribe to our newspaper</h2>
-
-          <input type="email" id="email" placeholder="Enter your email here...">
-        </div>
-        <div>
-          
-          <img src="/public/img/logo.jpg" alt="" width="100px" height="100px">
-          <h1>Ancient Mongolia</h1>
+          <div>
+            <p>Phone: <a href="tel:+9768888-8888">(976) 8888-8888</a></p>
+            <p>Email: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+            <p>Address: Mongolia, Ulaanbaatar</p>
+          </div>
 
           <div>
+            <h2>Subscribe to our newspaper</h2>
+
+            <input type="email" id="email" placeholder="Enter your email here...">
+            <button>Send</button>
+          </div>
+        </div>
+        <div class="rigth-side">
+          
+          <div>
+            <img src="/public/img/logo.jpg" alt="" width="100px" height="100px">
+            <h1>Ancient Mongolia</h1>
+          </div>
+          
+
+          <div class="a">
             <a href="">Home</a>
             <a href="">About us</a>
             <a href="">Tour package</a>
@@ -444,5 +452,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/public/js/swiper.js"></script>
     <script src="/public/js/home.js"></script>
+    <script src="/public/js/navBtnHandler.js"></script>
 </body>
 </html>
