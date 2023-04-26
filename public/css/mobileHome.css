@@ -1,0 +1,11 @@
+/* tablet or laptop is here */
+
+@media (min-width: 641px) and (max-width: 900px){
+
+}
+
+    /* mobile is here */
+
+@media (min-width: 320px) and (max-width: 640px){
+
+}
