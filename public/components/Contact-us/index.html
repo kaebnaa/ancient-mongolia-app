@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/public/components/Contact-us/css/style.css">
     <link rel="icon" href="./img/logo.jpg">
     <script src="https://kit.fontawesome.com/4e4e4deeed.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
 </head>
 <body>
     
@@ -45,16 +47,109 @@
             </div>
         </section> 
 
+        <!-- home background image section here -->
+
+        <section class="home-img">
+            
+        </section>
+
         <!-- contact us section is here -->
 
         <section class="contact-form">
-            
-        </section>
+            <p>We would love to hear from you! If you have any comments or suggestions about our website or our tours, please don't hesitate to get in touch. We are always looking for ways to improve and make your travel experience even better.</p>
+            <div class="form-cont">
+                <form action="">
+                    <h1>Contact us</h1><br>
+                    <div class="name-cont">
+                        <div>
+                            <label for="fName">First Name</label><br>
+                            <input type="text" name="fName" placeholder="Input your First Name in here" id="fName">
+                        </div>
+                        <div>
+                            <label for="">Last Name</label><br>
+                            <input type="text" name="lName" placeholder="Input your Last Name in Here" id="lName">
+                        </div>
+                    </div>
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" placeholder="Input your Email Address in here" id="email">
+                    <label for="tel">Phone Number</label>
+                    <input name="phone" type="text" id="tel" placeholder="Input your Phone Number in here">
     
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Write a message"></textarea>
+                    <button id="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- contact cards in here -->
+
+        <section class="why-with">
+            <div class="why-cards">
+              <div class="why-card">
+                <i class="fa-solid fa-car"></i>
+                <p>100+ tours around <br> Mongolia</p>
+              </div>
+              <div class="why-card">
+                <i class="fa-solid fa-circle-check"></i>
+                <p>100% Trusted travel <br> agency</p>
+              </div>
+              <div class="why-card">
+                <i class="fa-solid fa-id-card-clip"></i>
+                <p>10 years of travel <br> experience</p>
+              </div>
+            </div>
+          </section>
     </main>
+    <footer>
+
+        <div class="foot-cont">
+          <div class="left-side">
+            <h1>If you have any question,<br>Let us help you !</h1>
+            <p>If you have any questions or would like to <br>book a tour with us, please don't hesitate to contact us.</p>
+  
+            <div>
+              <p>Phone: <a href="tel:+9768888-8888">(976) 8888-8888</a></p>
+              <p>Email: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+              <p>Address: Mongolia, Ulaanbaatar</p>
+            </div>
+  
+            <div>
+              <h2>Subscribe to our newspaper</h2>
+  
+              <input type="email" id="femail" placeholder="Enter your email here...">
+              <button>Send</button>
+            </div>
+          </div>
+          <div class="rigth-side">
+            
+            <div>
+              <img src="/public/img/logo.jpg" alt="" width="100px" height="100px">
+              <h1>Ancient Mongolia</h1>
+            </div>
+            
+  
+            <div class="a">
+              <a href="">Home</a>
+              <a href="">About us</a>
+              <a href="">Tour package</a>
+              <a href="">Gallery</a>
+              <a href="">Contact Us</a>
+            </div>
+  
+          </div>
+        </div>
+  
+      </footer>
 
 
     <script src="/public/components/Contact-us/js/app.js"></script>
     <script src="/public/js/navBtnHandler.js"></script>
+    <script>
+        var input = document.querySelector("#tel");
+        window.intlTelInput(input, {
+            separateDialCode: true,
+        });
+    </script>
 </body>
 </html>
