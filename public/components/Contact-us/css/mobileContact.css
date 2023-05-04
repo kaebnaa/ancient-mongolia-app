@@ -74,9 +74,68 @@
     main .contact-form{
         width: 90%;
     }
-  
     main .why-with{
         width: 90%;
+    }
+    footer{
+        height: 65vh;
+        padding: 2% 2%;
+    }
+    footer .foot-cont{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .foot-cont .left-side h1, p{
+        margin-top: 10%;
+    }
+    footer .foot-cont .left-side h2,
+    footer .foot-cont .left-side input, 
+    footer .foot-cont .left-side button{
+        display: none;
+    }
+    footer .foot-cont .rigth-side{
+       display: none;
+    }
+}
+
+
+/* galaxy fold is here */
+@media (min-width: 100px) and (max-width: 320px){
+    header{
+        width: 100%;
+    }
+    header .contact{
+        width: 90%;
+    }
+    header .contact .tel{
+        display: none;
+    }
+    main{
+        width: 100%;
+    }
+    main .nav{
+        width: 90%;
+    }
+    main .nav div{
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: space-around;
+    }
+    main .nav #menuToggle{
+        display: block;
+    }
+    main .nav nav{
+        display: none;
+    }
+    main .contact-form{
+        width: 90%;
+    }
+    main .why-with{
+        width: 90%;
+        margin: 10rem 0 3rem;
     }
     footer{
         height: 65vh;
