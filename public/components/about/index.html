@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="/public/components/about/css/style.css">
     <link rel="icon" href="./img/logo.jpg">
     <script src="https://kit.fontawesome.com/4e4e4deeed.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/public/img/logo.jpg">
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="/public/components/about/css/mobileAbout.css">
 </head>
 <body>
     
@@ -30,20 +34,58 @@
 
     <main>
       
-        <!-- nav-bar is here -->
+       <!-- nav-bar is here -->
 
-        <section class="nav">
-            <div>
-                <img src="/public/img/logo.jpg" alt="" class="logo" width="80px" height="80px">
-                <nav>
-                    <ul id="home">Home</ul>
-                    <ul id="about" class="active">About</ul>
-                    <ul id="tour-package">Tour package</ul>
-                    <ul id="gallery">Gallery</ul>
-                    <ul id="contact">Contact us</ul>
-                </nav>
-            </div>
-        </section> 
+       <section class="nav">
+        <div>
+          <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+              <a href="/public/index.html"><li>Home</li></a>
+              <a href="/public/components/about/index.html"><li>About</li></a>
+              <a href="/public/components/Tour package/index.html"><li>Tour Package</li></a>
+              <a href="/public/components/Gallery/index.html"><li>Gallery</li></a>
+              <a href="/public/components/Contact-us/index.html"><li>Contact us</li></a>
+            </ul>
+          </div>
+
+            <img src="/public/img/logo.jpg" alt="" class="logo" width="80px" height="80px">
+            <nav>
+                <ul id="home">Home</ul>
+                <ul id="about">About</ul>
+                <ul id="tour-package">Tour package</ul>
+                <ul id="gallery">Gallery</ul>
+                <ul id="contact" class="active">Contact us</ul>
+            </nav>
+            
+            
+        </div>
+    </section> 
+
+    <!-- home background image section here -->
+
+    <section class="home-img">
+        
+    </section>
     
     </main>
 
