@@ -29,6 +29,8 @@ header{
     align-items: center;
     justify-content: space-around;
     padding: 0 2%;
+    position: sticky;
+    top: 0px;
 }
 header .contact{
     display: flex;
