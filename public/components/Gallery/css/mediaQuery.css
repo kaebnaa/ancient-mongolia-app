@@ -1,0 +1,121 @@
+
+
+/* 320px to 650px mobile */
+
+@media (min-width: 320px) and (max-width: 480px ){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     .home-img{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+
+     /* undsen hesgiin elementuudiig centerluulsen */
+
+    /* ::selection{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }  */
+    .information{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .info-card-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-images p{
+        opacity: 0;
+        transition: 0.6s linear;
+        margin-top: -10px;
+    }
+
+
+    /* utas deer haragdah baidal utsan deer 1,1-eer tsuvj haragdana */
+
+    .info-images{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    }
+    .hover-card-1{
+        grid-column: 1;
+        grid-row: 1 ;
+    }
+    .hover-card-2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .hover-card-3{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .hover-card-4{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .hover-card-5{
+        grid-column: 1;
+        grid-row: 5 / span 2;
+    }
+    .hover-card-6{
+        grid-column: 1;
+        grid-row: 7;
+    }
+    .hover-card-7{
+        grid-column: 1;
+        grid-row: 8;
+    }
+    .hover-card-8{
+        grid-column: 1;
+        grid-row: 9;
+    }
+    /* .hover-card-9{
+        grid-column: 1;
+        grid-row: 10;
+    } */
+    .hover-card-10{
+        grid-column: 1;
+        grid-row: 10;
+    }
+    .hover-card-11{
+        grid-column: 1;
+        grid-row: 11;
+    }
+    .hover-card-12{
+        grid-column: 1;
+        grid-row: 12;
+    }
+    .hover-card-13{
+        grid-column: 1;
+        grid-row: 13;
+    }
+    .hover-card-14{
+        grid-column: 1;
+        grid-row: 14;
+    }
+    .hover-card-15{
+        grid-column: 1;
+        grid-row: 15;
+    }
+    .hover-card-16{
+        grid-column: 1;
+        grid-row: 16;
+    }
+    .hover-card-17{
+        grid-column: 1;
+        grid-row: 17;
+    }
+}
