@@ -31,6 +31,7 @@ header{
     justify-content: space-around;
     position: sticky;
     top: 0px;
+    z-index: 10000;
 }
 header .contact{
     display: flex;

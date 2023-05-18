@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ancient Mongolia</title>
     <link rel="stylesheet" href="/public/components/Gallery/css/style.css">
+    <link rel="stylesheet" href="/public/components/Gallery/css/mediaQuery.css">
     <link rel="icon" href="./img/logo.jpg">
     <script src="https://kit.fontawesome.com/4e4e4deeed.js" crossorigin="anonymous"></script>
 </head>
@@ -34,6 +35,37 @@
 
         <section class="nav">
             <div>
+              <!-- hamburger is here -->
+              <div id="menuToggle">
+                <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+                <input type="checkbox" />
+                
+                <!--
+                Some spans to act as a hamburger.
+                
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+                <span></span>
+                <span></span>
+                <span></span>
+                
+                <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+                <ul id="menu">
+                  <a href="/public/index.html"><li>Home</li></a>
+                  <a href="/public/components/about/index.html"><li>About</li></a>
+                  <a href="/public/components/Tour package/index.html"><li>Tour Package</li></a>
+                  <a href="/public/components/Gallery/index.html"><li>Gallery</li></a>
+                  <a href="/public/components/Contact-us/index.html"><li>Contact us</li></a>
+                </ul>
+              </div>
+              <!-- computer sciefy is here -->
                 <img src="/public/img/logo.jpg" alt="" class="logo" width="80px" height="80px">
                 <nav>
                     <ul id="home">Home</ul>
@@ -43,7 +75,9 @@
                     <ul id="contact">Contact us</ul>
                 </nav>
             </div>
-        </section> 
+            
+            
+        </section>
 
 
         <!-- index img is here background img ashiglasan -->
@@ -63,7 +97,7 @@
             <figure class="info-card-img">
                 <div class="info-images">
                         <div onclick="provinces()" class="hover-card-1">
-                            <img src="/public/img/gallery-img/currency.jpg" alt="" class="info-img-1">
+                            <img src="/public/img/gallery-img/province.jpg" alt="" class="info-img-1">
                             <div class="text-info">
                                 <div class="text-border">
                                     <p style="font-weight: bold; font-size: 24px;"  >21</p>   
@@ -211,6 +245,49 @@
 
     </main>
 
+
+    <!-- footer is here -->
+
+    <footer>
+
+        <div class="foot-cont">
+          <div class="left-side">
+            <h1>If you have any question,<br>Let us help you !</h1>
+            <p>If you have any questions or would like to <br>book a tour with us, please don't hesitate to contact us.</p>
+  
+            <div>
+              <p>Phone: <a href="tel:+9768888-8888">(976) 8888-8888</a></p>
+              <p>Email: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+              <p>Address: Mongolia, Ulaanbaatar</p>
+            </div>
+  
+            <div>
+              <h2>Subscribe to our newspaper</h2>
+  
+              <input type="email" id="email" placeholder="Enter your email here...">
+              <button>Send</button>
+            </div>
+          </div>
+          <div class="rigth-side">
+            
+            <div>
+              <img src="/public/img/logo.jpg" alt="" width="100px" height="100px">
+              <h1>Ancient Mongolia</h1>
+            </div>
+            
+  
+            <div class="a">
+              <a href="">Home</a>
+              <a href="">About us</a>
+              <a href="">Tour package</a>
+              <a href="">Gallery</a>
+              <a href="">Contact Us</a>
+            </div>
+  
+          </div>
+        </div>
+  
+      </footer>
 
     <script src="/public/components/Gallery/js/app.js"></script>
         
