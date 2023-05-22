@@ -67,11 +67,17 @@ main{
     align-items: center;
 }
 main .nav{
-    width: 60%;
+    width: 100%;
     height: 6em;
-    
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 50px;
+    background-color: var(--white);
+    z-index: 1000000;
 }
 main .nav div{
+  width: 60%;
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -84,6 +90,7 @@ main .nav div{
 .nav nav ul{
     font-weight: 500;
     cursor: pointer;
+    color: var(--black);
 }
 .active{
     color: var(--green);
@@ -253,10 +260,16 @@ main .nav div{
 
 .home-img{
     width: 100%;
-    height: 85vh;
+    height: 55vh;
     background-image: url("/public/img/home-svg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px 2px var(--smooth);
+    font-size: 3rem;
 }
 
 /* Information or facts about Mongolia is here */

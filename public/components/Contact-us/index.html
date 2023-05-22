@@ -18,16 +18,20 @@
         <div class="contact">
             <div class="tel">
                 <i class="fa-solid fa-phone"></i>
-                <a href="tel:+9768888-8888">8888-8888</a>
+                <a href="tel:+97698200609">(976) 9820-0609</a>
             </div> 
+            <div>
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/97698200609 ">(976) 9820-0609</a>
+            </div>
             <div class="mail">
                 <i class="fa-solid fa-envelope"></i>
-                <a href="mailto:example@gmail.com">example@gmail.com</a>
+                <a href="mailto:ancientmongolia380@gmail.com">ancientmongolia380@gmail.com</a>
             </div>
         </div>
         <div class="social">
-            <a href="https://www.facebook.com/profile.php?id=100083280995086"><i class="fa-brands fa-square-facebook" id="fb"></i></a>
-            <i class="fa-brands fa-instagram" id="inst"></i>
+            <a href=""><i class="fa-brands fa-square-facebook" id="fb"></i></a>
+            <!-- <i class="fa-brands fa-instagram" id="inst"></i> -->
         </div>
     </header>
 
@@ -60,7 +64,6 @@
                 -->
                 <ul id="menu">
                   <a href="/public/index.html"><li>Home</li></a>
-                  <a href="/public/components/about/index.html"><li>About</li></a>
                   <a href="/public/components/Tour package/index.html"><li>Tour Package</li></a>
                   <a href="/public/components/Gallery/index.html"><li>Gallery</li></a>
                   <a href="/public/components/Contact-us/index.html"><li>Contact us</li></a>
@@ -69,11 +72,10 @@
 
                 <img src="/public/img/logo.jpg" alt="" class="logo" width="80px" height="80px">
                 <nav>
-                    <ul id="home">Home</ul>
-                    <ul id="about">About</ul>
-                    <ul id="tour-package">Tour package</ul>
-                    <ul id="gallery">Gallery</ul>
-                    <ul id="contact" class="active">Contact us</ul>
+                  <a href="/public/index.html"><ul id="home">Home</ul></a>
+                  <a href="/public/components/Tour package/index.html"><ul id="tour-package">Tour package</ul></a>
+                  <a href="/public/components/Gallery/index.html"><ul id="gallery">Gallery</ul></a>
+                  <a href="/public/components/Contact-us/index.html"><ul id="contact" class="active">Contact us</ul></a>
                 </nav>
                 
                 
@@ -83,7 +85,7 @@
         <!-- home background image section here -->
 
         <section class="home-img">
-            
+          <h1>Ancient Mongolia Travel Agency</h1>
         </section>
 
         <!-- contact us section is here -->
@@ -114,7 +116,7 @@
         
         <!-- contact cards in here -->
 
-        <section class="why-with">
+        <!-- <section class="why-with">
             <div class="why-cards">
               <div class="why-card">
                 
@@ -126,7 +128,7 @@
 
               </div>
             </div>
-          </section>
+          </section> -->
     </main>
     <footer>
 
@@ -136,8 +138,9 @@
             <p>If you have any questions or would like to <br>book a tour with us, please don't hesitate to contact us.</p>
   
             <div>
-              <p>Phone: <a href="tel:+9768888-8888">(976) 8888-8888</a></p>
-              <p>Email: <a href="mailto:example@gmail.com">example@gmail.com</a></p>
+              <p> <i class="fa-solid fa-phone"></i> Phone: <a href="tel:+97698200609">(976) 9820-0609</a></p>
+              <p>  <i class="fa-brands fa-whatsapp"></i> What's app: <a href="https://wa.me/97698200609 ">(976) 9820-0609</a></p>
+              <p><i class="fa-solid fa-envelope"></i> Email: <a href="mailto:ancientmongolia380@gmail.com">ancientmongolia380@gmail.com</a></p>
               <p>Address: Mongolia, Ulaanbaatar</p>
             </div>
   
@@ -157,11 +160,10 @@
             
   
             <div class="a">
-              <a href="">Home</a>
-              <a href="">About us</a>
-              <a href="">Tour package</a>
-              <a href="">Gallery</a>
-              <a href="">Contact Us</a>
+              <a href="/public/index.html">Home</a>
+              <a href="/public/components/Tour package/index.html">Tour package</a>
+              <a href="/public/components/Gallery/index.html">Gallery</a>
+              <a href="/public/components/Contact-us/index.html">Contact Us</a>
             </div>
   
           </div>
@@ -172,6 +174,7 @@
 
     <script src="/public/components/Contact-us/js/app.js"></script>
     <script src="/public/js/navBtnHandler.js"></script>
+    <script src="/public/js/home.js"></script>
     <script>
         var input = document.querySelector("#tel");
         window.intlTelInput(input, {

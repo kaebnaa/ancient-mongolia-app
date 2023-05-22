@@ -21,14 +21,13 @@ body{
 
    /* header is here */
 
-header{
+   header{
     width: 100%;
-    height: 10%;
+    height: 50px;
     background-color: var(--green);
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0 2%;
     position: sticky;
     top: 0px;
     z-index: 10000;
@@ -36,7 +35,6 @@ header{
 header .contact{
     display: flex;
     gap: 1.3rem;
-    margin-left: 2%;
 }
 header .contact div i,a{
     color: var(--white);
@@ -50,8 +48,7 @@ header .social{
     gap: 10px;
     color: var(--white);
     font-size: 1.5rem;
-    margin: 0.5rem 0rem;
-    margin-right: 6%;
+    margin: 0.5rem 0;
 }
 header .social i{
     cursor: pointer;
@@ -69,15 +66,21 @@ main{
     align-items: center;
 }
 main .nav{
-    width: 60%;
-    height: 6em;
-    position: relative;
+  width: 100%;
+  height: 6em;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 50px;
+  background-color: var(--white);
+  z-index: 1000000;
 }
 main .nav div{
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  margin-left: 3rem;
+width: 60%;
+display: flex;
+align-items: center;
+gap: 3rem;
+margin-left: 3rem;
 }
 .nav nav{
     display: flex;
@@ -86,6 +89,7 @@ main .nav div{
 .nav nav ul{
     font-weight: 500;
     cursor: pointer;
+    color: var(--black);
 }
 .active{
     color: var(--green);
@@ -255,11 +259,17 @@ main .nav div{
 /* main home image is here */
 
 .home-img{
-    width: 100%;
-    height: 55vh;
-    background-image: url("/public/img/home-svg.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  height: 55vh;
+  background-image: url("/public/img/home-svg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 2px 2px var(--smooth);
+  font-size: 3rem;
 }
 
 /* contact form is here */
