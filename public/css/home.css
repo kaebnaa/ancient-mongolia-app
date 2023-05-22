@@ -261,7 +261,7 @@ main .nav div{
 .home-img{
     width: 100%;
     height: 85vh;
-    background-image: url("/public/img/home-svg.jpg");
+    background-image: url("../img/home-svg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: var(--white);

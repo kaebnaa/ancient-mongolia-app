@@ -388,7 +388,7 @@ main .pack-card .cards{
   
 
 .image{
-    background-image: url(/public/img/tourp-img/work1.png);
+    background-image: url(../../../img/tourp-img/work1.png);
     height: 55vh;
     width: 100vw;
     background-size: cover;

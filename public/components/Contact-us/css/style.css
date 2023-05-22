@@ -261,7 +261,7 @@ margin-left: 3rem;
 .home-img{
   width: 100%;
   height: 55vh;
-  background-image: url("/public/img/home-svg.jpg");
+  background-image: url("../../../img/home-svg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   color: var(--white);
