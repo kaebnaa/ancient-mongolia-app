@@ -387,7 +387,7 @@ main .pack-card .cards{
     left: 20px;
     position: absolute;
   }
-  .pack-card button:hover{
+  .rec-card button:hover{
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     transition: 0.6s;
   }
@@ -511,6 +511,7 @@ main .recommended-cards button{
   color: var(--white);
   background-color: var(--orange);
   border-radius: 10px;
+
 }
  
   /* out clients section is here */

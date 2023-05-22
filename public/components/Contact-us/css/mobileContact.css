@@ -53,6 +53,9 @@
     header .contact .tel{
         display: none;
     }
+    header .mail{
+        display: none;
+    }
     main{
         width: 100%;
     }
@@ -60,7 +63,7 @@
         width: 100%;
     }
     main .nav div{
-        width: 100%;
+        width: 90%;
         margin-left: 0;
         display: flex;
         justify-content: space-around;

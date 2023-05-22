@@ -83,6 +83,9 @@
         width: 80%;
         margin-left: 20px;
     }
+    header .mail{
+        display: none;
+    }
     header .contact .tel{
         display: none;
     }
@@ -93,7 +96,7 @@
         width: 100%;
     }
     main .nav div{
-        width: 100%;
+        width: 90%;
         margin-left: 0;
         display: flex;
         justify-content: space-around;

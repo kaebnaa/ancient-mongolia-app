@@ -6,11 +6,12 @@
         width: 100%;
     }
     main .nav{
-        width: 80%;
+        width: 100%;
     }
     main .contact-form{
         width: 80%;
     }
+    
     main .why-with{
         width: 80%;
     }
@@ -27,11 +28,17 @@
         width: 100%;
     }
     main .nav{
-        width: 90%;
+        width: 100%;
     }
     
     /* cards query */
 
+    main .pack-card{
+        width: 90%;
+    }
+    main .pack-card .cards{
+        grid-template-columns: 1fr 1fr;
+    }
     .container{
         width: 80%;
         display: grid;
@@ -78,17 +85,26 @@
     header .contact .tel{
         display: none;
     }
+    header .mail{
+        display: none;
+    }
     main{
         width: 100%;
     }
     main .nav{
-        width: 90%;
+        width: 100%;
     }
     main .nav div{
-        width: 100%;
+        width: 90%;
         margin-left: 0;
         display: flex;
         justify-content: space-around;
+    }
+    main .pack-card{
+        width: 90%;
+    }
+    main .pack-card .cards{
+        grid-template-columns: 1fr;
     }
     main .nav #menuToggle{
         display: block;
@@ -224,14 +240,17 @@
     header .contact .tel{
         display: none;
     }
+    header .mail{
+        display: none;
+    }
     main{
         width: 100%;
     }
     main .nav{
-        width: 90%;
+        width: 100%;
     }
     main .nav div{
-        width: 100%;
+        width: 90%;
         margin-left: 0;
         display: flex;
         justify-content: space-around;
@@ -242,7 +261,12 @@
     main .nav nav{
         display: none;
     }
-
+    main .pack-card{
+        width: 90%;
+    }
+    main .pack-card .cards{
+        grid-template-columns: 1fr;
+    }
 
     .p1{
         font-size: 1.5rem;
